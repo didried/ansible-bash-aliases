@@ -1,0 +1,1 @@
+alias dsa='docker stop $(docker ps -qa)'

@@ -1,0 +1,24 @@
+---
+# tasks file for bash-aliases
+- name: add configuration directory
+  file:
+    dest: ~/bash_aliases.conf.d/
+    state: directory
+
+- name: add docker aliases
+  copy:
+    src: docker.aliases
+    dest: ~/bash_aliases.conf.d/
+  when: "{{ bash_aliases_docker|bool }}"
+
+- name: check docker aliases status
+  file:
+    dest: ~/bash_aliases.conf.d/docker.aliases
+    state: "{{ bash_aliases_docker|bool | ternary('file', 'absent') }}"
+
+- name: assemble .bash_aliases
+  assemble:
+    src: ~/bash_aliases.conf.d/
+    dest: ~/.bash_aliases
+    delimiter: ###
+...
