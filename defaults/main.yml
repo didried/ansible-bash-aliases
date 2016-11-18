@@ -1,4 +1,5 @@
 ---
 # defaults file for bash-aliases
 bash_aliases_docker: no
+bash_aliases_steam: no
 ...
