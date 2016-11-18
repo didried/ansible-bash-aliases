@@ -26,5 +26,5 @@
   assemble:
     src: ~/bash_aliases.conf.d/
     dest: ~/.bash_aliases
-    delimiter: ###
+    delimiter: "###"
 ...
