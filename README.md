@@ -1,7 +1,8 @@
-Role Name
+ansible-bash-aliases
 =========
+[![Build Status](https://travis-ci.org/didried/ansible-bash-aliases.svg?branch=master)](https://travis-ci.org/didried/ansible-bash-aliases)
 
-A brief description of the role goes here.
+Provides an easy way to manage your bash aliases
 
 Requirements
 ------------
@@ -35,4 +36,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Edgars Didrihsons
